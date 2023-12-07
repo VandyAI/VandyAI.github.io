@@ -28,34 +28,15 @@ navbar-links:
 ###############################################
 # --- Grid of people in the about section --- #
 ###############################################
+
+#Name and image are required, description is optional
 people:
-  - Name: "Test Person1"
-    Image: "/assets/img/people/person1.jpg"
-    Description: "This is a test description"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person3.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
-  - Name: "Test Person2"
-    Image: "/assets/img/people/person2.jpg"
-    Description: "This is test desc 2"
+#Examples
+  # - Name: "Test Person1"
+  #   Image: "/assets/img/people/person1.jpg"
+  # - Name: "Test Person2"
+  #   Image: "/assets/img/people/person2.jpg"
+  #   Description: "This is test desc 2"
 
 ################
 # --- Logo --- #
