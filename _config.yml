@@ -25,6 +25,19 @@ navbar-links:
   Projects: "projects"
   About: "about"
 
+###############################################
+# --- Grid of people in the about section --- #
+###############################################
+
+#Name and image are required, description is optional
+people:
+#Examples
+  # - Name: "Test Person1"
+  #   Image: "/assets/img/people/person1.jpg"
+  # - Name: "Test Person2"
+  #   Image: "/assets/img/people/person2.jpg"
+  #   Description: "This is test desc 2"
+
 ################
 # --- Logo --- #
 ################

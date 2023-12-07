@@ -1,0 +1,71 @@
+{% if site.people %}
+<style>
+	.grid-container {
+		/* display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 10px;
+            justify-content: center; */
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/* Centers the flex items */
+		gap: 20px;
+		/* Spacing between items */
+		padding: 10px;
+	}
+
+	.grid-item {
+		/* display: flex;
+            flex-direction: column;
+            align-items: center; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 150px;
+	}
+
+	.member-photo {
+		width: 150px;
+		/* Image width */
+		height: 150px;
+		/* Image height, equal to width for square */
+		object-fit: cover;
+		border-radius: 5px;
+		/* Slight rounding of corners */
+	}
+
+	.member-name {
+		margin-top: 10px;
+		text-align: center;
+		font-weight: bold;
+		/* Makes the text bold */
+	}
+
+	.member-description {
+		text-align: center;
+		width: 150px;
+		/* Same as image width */
+		overflow-wrap: break-word;
+		font-size: smaller;
+	}
+</style>
+
+<div class="grid-container">
+	{% for person in site.people %}
+	<figure class="grid-item">
+		<img src="{{ person['Image'] }}" alt="{{ person['Name'] }}" class="member-photo">
+		{% if person['Description'] %}
+		<figcaption>
+			<div class="member-name">{{ person['Name'] }}</div>
+			<div class="member-description">{{ person['Description'] }}</div>
+		</figcaption>
+		{% else %}
+		<figcaption>
+			<div class="member-name">{{ person['Name'] }}</div>
+		</figcaption>
+		{% endif %}
+	</figure>
+	{% endfor %}
+</div>
+{% endif %}
